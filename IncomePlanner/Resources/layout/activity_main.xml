@@ -15,11 +15,18 @@
         android:orientation="vertical"
         android:gravity="center">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Income Planner"
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:gravity="center"/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextLayoutPhp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="php per hour"
+            android:hint="Basic pay"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
 
@@ -73,6 +80,165 @@
                 android:inputType="numberDecimal"
             />
         </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Basic Pay:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Withholding Tax:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="SSS Contribution:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="PhilHealth Contribution:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="PAG-IBIG Contribution:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Total Deductions:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Net Pay:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+
+
+
+
+        </TableLayout>
     </LinearLayout>
 
 
