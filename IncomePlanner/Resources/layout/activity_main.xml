@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center">
 
@@ -21,6 +21,23 @@
             android:text="Income Planner"
             android:textSize="@dimen/abc_text_size_display_2_material"
             android:gravity="center"/>
+
+	    <com.google.android.material.textfield.TextInputLayout
+		    android:id="@+id/dropdown_menu"
+		    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"					       
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            >
+		    <!-- Google themselves instruct us to use the deprecated editable attribute -->
+		    <AutoCompleteTextView
+			    android:id="@+id/dropdown_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+			    android:editable="false"/>
+	    </com.google.android.material.textfield.TextInputLayout>
+
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextLayoutPhp"
@@ -83,8 +100,8 @@
 
 
         <TableLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:stretchColumns="1">
 
             <TableRow
@@ -242,27 +259,29 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/abc_action_bar_default_height_material"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCalculate"
-            android:layout_width="300dp"
+            android:layout_width="300dip"
             android:layout_height="wrap_content"
             android:text="Calculate"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="4dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnClear"
-            android:layout_width="wrap_content"
+            android:layout_width=""
             android:layout_height="wrap_content"
             style="@style/Widget.App.Button.OutlinedButton.IconOnly"
             app:icon="@drawable/abc_ic_clear_material"
-            app:strokeColor="@color/colorAccent"/>
+            />
 
-    </LinearLayout>
+        
+
+    </GridLayout>
 
 </LinearLayout>
