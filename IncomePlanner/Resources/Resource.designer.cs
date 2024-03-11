@@ -14,7 +14,7 @@ namespace IncomePlanner
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.2.2.120")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.2.1.111")]
 	public partial class Resource
 	{
 		
@@ -5116,28 +5116,31 @@ namespace IncomePlanner
 			public const int tag_unhandled_key_listeners = 2131296515;
 			
 			// aapt resource value: 0x7F090104
-			public const int test_checkbox_android_button_tint = 2131296516;
+			public const int test = 2131296516;
 			
 			// aapt resource value: 0x7F090105
-			public const int test_checkbox_app_button_tint = 2131296517;
+			public const int test_checkbox_android_button_tint = 2131296517;
 			
 			// aapt resource value: 0x7F090106
-			public const int text = 2131296518;
+			public const int test_checkbox_app_button_tint = 2131296518;
 			
 			// aapt resource value: 0x7F090107
-			public const int text2 = 2131296519;
+			public const int text = 2131296519;
 			
 			// aapt resource value: 0x7F090108
-			public const int textEnd = 2131296520;
+			public const int text2 = 2131296520;
 			
-			// aapt resource value: 0x7F090117
-			public const int textinput_counter = 2131296535;
+			// aapt resource value: 0x7F090109
+			public const int textEnd = 2131296521;
 			
 			// aapt resource value: 0x7F090118
-			public const int textinput_error = 2131296536;
+			public const int textinput_counter = 2131296536;
 			
 			// aapt resource value: 0x7F090119
-			public const int textinput_helper_text = 2131296537;
+			public const int textinput_error = 2131296537;
+			
+			// aapt resource value: 0x7F09011A
+			public const int textinput_helper_text = 2131296538;
 			
 			// aapt resource value: 0x7F09000A
 			public const int TextLayoutDays = 2131296266;
@@ -5145,65 +5148,65 @@ namespace IncomePlanner
 			// aapt resource value: 0x7F09000B
 			public const int TextLayoutPhp = 2131296267;
 			
-			// aapt resource value: 0x7F090109
-			public const int textSpacerNoButtons = 2131296521;
-			
 			// aapt resource value: 0x7F09010A
-			public const int textSpacerNoTitle = 2131296522;
+			public const int textSpacerNoButtons = 2131296522;
 			
 			// aapt resource value: 0x7F09010B
-			public const int textStart = 2131296523;
+			public const int textSpacerNoTitle = 2131296523;
 			
 			// aapt resource value: 0x7F09010C
-			public const int textViewAnnualIncome = 2131296524;
+			public const int textStart = 2131296524;
 			
 			// aapt resource value: 0x7F09010D
-			public const int textViewAnnualWork = 2131296525;
+			public const int textViewAnnualIncome = 2131296525;
 			
 			// aapt resource value: 0x7F09010E
-			public const int textViewIncomeTax = 2131296526;
+			public const int textViewAnnualWork = 2131296526;
 			
 			// aapt resource value: 0x7F09010F
-			public const int textViewNetPay = 2131296527;
+			public const int textViewIncomeTax = 2131296527;
 			
 			// aapt resource value: 0x7F090110
-			public const int textViewPagIbig = 2131296528;
+			public const int textViewNetPay = 2131296528;
 			
 			// aapt resource value: 0x7F090111
-			public const int textViewPhilHealth = 2131296529;
-			
-			// aapt resource value: 0x7F090113
-			public const int textViewSavings = 2131296531;
+			public const int textViewPagIbig = 2131296529;
 			
 			// aapt resource value: 0x7F090112
-			public const int textViewSSS = 2131296530;
+			public const int textViewPhilHealth = 2131296530;
 			
 			// aapt resource value: 0x7F090114
-			public const int textViewTotalDeductions = 2131296532;
+			public const int textViewSavings = 2131296532;
+			
+			// aapt resource value: 0x7F090113
+			public const int textViewSSS = 2131296531;
 			
 			// aapt resource value: 0x7F090115
-			public const int text_input_end_icon = 2131296533;
+			public const int textViewTotalDeductions = 2131296533;
 			
 			// aapt resource value: 0x7F090116
-			public const int text_input_start_icon = 2131296534;
+			public const int text_input_end_icon = 2131296534;
 			
-			// aapt resource value: 0x7F09011A
-			public const int time = 2131296538;
+			// aapt resource value: 0x7F090117
+			public const int text_input_start_icon = 2131296535;
 			
 			// aapt resource value: 0x7F09011B
-			public const int title = 2131296539;
+			public const int time = 2131296539;
 			
 			// aapt resource value: 0x7F09011C
-			public const int titleDividerNoCustom = 2131296540;
+			public const int title = 2131296540;
 			
 			// aapt resource value: 0x7F09011D
-			public const int title_template = 2131296541;
+			public const int titleDividerNoCustom = 2131296541;
 			
 			// aapt resource value: 0x7F09011E
-			public const int top = 2131296542;
+			public const int title_template = 2131296542;
 			
 			// aapt resource value: 0x7F09011F
-			public const int topPanel = 2131296543;
+			public const int top = 2131296543;
+			
+			// aapt resource value: 0x7F090120
+			public const int topPanel = 2131296544;
 			
 			// aapt resource value: 0x7F090008
 			public const int TOP_END = 2131296264;
@@ -5211,56 +5214,56 @@ namespace IncomePlanner
 			// aapt resource value: 0x7F090009
 			public const int TOP_START = 2131296265;
 			
-			// aapt resource value: 0x7F090120
-			public const int touch_outside = 2131296544;
-			
 			// aapt resource value: 0x7F090121
-			public const int transition_current_scene = 2131296545;
+			public const int touch_outside = 2131296545;
 			
 			// aapt resource value: 0x7F090122
-			public const int transition_layout_save = 2131296546;
+			public const int transition_current_scene = 2131296546;
 			
 			// aapt resource value: 0x7F090123
-			public const int transition_position = 2131296547;
+			public const int transition_layout_save = 2131296547;
 			
 			// aapt resource value: 0x7F090124
-			public const int transition_scene_layoutid_cache = 2131296548;
+			public const int transition_position = 2131296548;
 			
 			// aapt resource value: 0x7F090125
-			public const int transition_transform = 2131296549;
+			public const int transition_scene_layoutid_cache = 2131296549;
 			
 			// aapt resource value: 0x7F090126
-			public const int @unchecked = 2131296550;
+			public const int transition_transform = 2131296550;
 			
 			// aapt resource value: 0x7F090127
-			public const int uniform = 2131296551;
+			public const int @unchecked = 2131296551;
 			
 			// aapt resource value: 0x7F090128
-			public const int unlabeled = 2131296552;
+			public const int uniform = 2131296552;
 			
 			// aapt resource value: 0x7F090129
-			public const int up = 2131296553;
+			public const int unlabeled = 2131296553;
 			
 			// aapt resource value: 0x7F09012A
-			public const int useLogo = 2131296554;
+			public const int up = 2131296554;
 			
 			// aapt resource value: 0x7F09012B
-			public const int view_offset_helper = 2131296555;
+			public const int useLogo = 2131296555;
 			
 			// aapt resource value: 0x7F09012C
-			public const int view_tree_saved_state_registry_owner = 2131296556;
+			public const int view_offset_helper = 2131296556;
 			
 			// aapt resource value: 0x7F09012D
-			public const int visible = 2131296557;
+			public const int view_tree_saved_state_registry_owner = 2131296557;
 			
 			// aapt resource value: 0x7F09012E
-			public const int visible_removing_fragment_view_tag = 2131296558;
+			public const int visible = 2131296558;
 			
 			// aapt resource value: 0x7F09012F
-			public const int withText = 2131296559;
+			public const int visible_removing_fragment_view_tag = 2131296559;
 			
 			// aapt resource value: 0x7F090130
-			public const int wrap_content = 2131296560;
+			public const int withText = 2131296560;
+			
+			// aapt resource value: 0x7F090131
+			public const int wrap_content = 2131296561;
 			
 			static Id()
 			{
@@ -5641,52 +5644,55 @@ namespace IncomePlanner
 			public const int notification_template_part_time = 2131492944;
 			
 			// aapt resource value: 0x7F0C0051
-			public const int select_dialog_item_material = 2131492945;
+			public const int result = 2131492945;
 			
 			// aapt resource value: 0x7F0C0052
-			public const int select_dialog_multichoice_material = 2131492946;
+			public const int select_dialog_item_material = 2131492946;
 			
 			// aapt resource value: 0x7F0C0053
-			public const int select_dialog_singlechoice_material = 2131492947;
+			public const int select_dialog_multichoice_material = 2131492947;
 			
 			// aapt resource value: 0x7F0C0054
-			public const int support_simple_spinner_dropdown_item = 2131492948;
+			public const int select_dialog_singlechoice_material = 2131492948;
 			
 			// aapt resource value: 0x7F0C0055
-			public const int test_action_chip = 2131492949;
+			public const int support_simple_spinner_dropdown_item = 2131492949;
 			
 			// aapt resource value: 0x7F0C0056
-			public const int test_design_checkbox = 2131492950;
+			public const int test_action_chip = 2131492950;
 			
 			// aapt resource value: 0x7F0C0057
-			public const int test_reflow_chipgroup = 2131492951;
+			public const int test_design_checkbox = 2131492951;
 			
 			// aapt resource value: 0x7F0C0058
-			public const int test_toolbar = 2131492952;
+			public const int test_reflow_chipgroup = 2131492952;
 			
 			// aapt resource value: 0x7F0C0059
-			public const int test_toolbar_custom_background = 2131492953;
+			public const int test_toolbar = 2131492953;
 			
 			// aapt resource value: 0x7F0C005A
-			public const int test_toolbar_elevation = 2131492954;
+			public const int test_toolbar_custom_background = 2131492954;
 			
 			// aapt resource value: 0x7F0C005B
-			public const int test_toolbar_surface = 2131492955;
-			
-			// aapt resource value: 0x7F0C0060
-			public const int text_view_without_line_height = 2131492960;
+			public const int test_toolbar_elevation = 2131492955;
 			
 			// aapt resource value: 0x7F0C005C
-			public const int text_view_with_line_height_from_appearance = 2131492956;
+			public const int test_toolbar_surface = 2131492956;
+			
+			// aapt resource value: 0x7F0C0061
+			public const int text_view_without_line_height = 2131492961;
 			
 			// aapt resource value: 0x7F0C005D
-			public const int text_view_with_line_height_from_layout = 2131492957;
+			public const int text_view_with_line_height_from_appearance = 2131492957;
 			
 			// aapt resource value: 0x7F0C005E
-			public const int text_view_with_line_height_from_style = 2131492958;
+			public const int text_view_with_line_height_from_layout = 2131492958;
 			
 			// aapt resource value: 0x7F0C005F
-			public const int text_view_with_theme_line_height = 2131492959;
+			public const int text_view_with_line_height_from_style = 2131492959;
+			
+			// aapt resource value: 0x7F0C0060
+			public const int text_view_with_theme_line_height = 2131492960;
 			
 			static Layout()
 			{
