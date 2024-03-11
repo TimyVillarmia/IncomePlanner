@@ -34,8 +34,8 @@ namespace IncomePlanner
             SetContentView(Resource.Layout.activity_main);
 
             // EditText
-            editTxtBasicPay = FindViewById<TextInputEditText>(Resource.Id.editTextBasicPay);
-            editTextDays = FindViewById<TextInputEditText>(Resource.Id.editTextDays);
+            editTextPeso = FindViewById<TextInputEditText>(Resource.Id.editTextPeso);
+            editTextWorkedHours = FindViewById<TextInputEditText>(Resource.Id.editTextWorkedHours);
             editTextTaxRate = FindViewById<TextInputEditText>(Resource.Id.editTextTaxRate);
             editTextSavingsRate = FindViewById<TextInputEditText>(Resource.Id.editTextSavingsRate);
 
@@ -44,7 +44,8 @@ namespace IncomePlanner
             btnClear = FindViewById<MaterialButton>(Resource.Id.btnClear);
 
             // TextView
-            textViewBasicPay = FindViewById<TextView>(Resource.Id.editTextBasicPay);
+            textViewAnnualIncome = FindViewById<TextView>(Resource.Id.textViewAnnualIncome);
+            textViewAnnualWork = FindViewById<TextView>(Resource.Id.textViewAnnualWork);
             textViewSSS = FindViewById<TextView>(Resource.Id.textViewSSS);
             textViewPhilHealth = FindViewById<TextView>(Resource.Id.textViewPhilHealth);
             textViewPagIbig = FindViewById<TextView>(Resource.Id.textViewPagIbig);
@@ -64,8 +65,8 @@ namespace IncomePlanner
 
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            editTxtBasicPay.Text = "";
-            editTextDays.Text = "";
+            editTextPeso.Text = "";
+            editTextWorkedHours.Text = "";
             editTextTaxRate.Text = "";
             editTextSavingsRate.Text = "";
         }
