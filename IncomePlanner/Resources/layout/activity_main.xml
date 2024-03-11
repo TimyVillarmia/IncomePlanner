@@ -23,49 +23,32 @@
             android:textSize="@dimen/mtrl_calendar_title_baseline_to_top"
             android:gravity="center"/>
 
-	    <com.google.android.material.textfield.TextInputLayout
-		    android:id="@+id/dropdown_menu"
-		    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"					       
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-            >
-		    <!-- Google themselves instruct us to use the deprecated editable attribute -->
-		    <AutoCompleteTextView
-			    android:id="@+id/dropdown_item"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-			    android:editable="false"/>
-	    </com.google.android.material.textfield.TextInputLayout>
-
-
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/TextLayoutDays"
+            android:id="@+id/TextLayoutPhp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Number of Days"
+            android:hint="₱ per hour"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
 
           <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextDays"
+                android:id="@+id/editTextPeso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
               />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/TextLayoutPhp"
+       <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextLayoutDays"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Basic pay"
+            android:hint="Worked Hours per day"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
 
           <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextBasicPay"
+                android:id="@+id/editTextWorkedHours"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
@@ -115,12 +98,35 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_column="1"
-                    android:text="Basic Pay:"
+                    android:text="Annual Income:"
                     android:textSize="@dimen/abc_text_size_body_1_material"
                     android:textStyle="normal"
                     android:padding="3dip"/>
                 <TextView
-                    android:id="@+id/textViewBasicPay"
+                    android:id="@+id/textViewAnnualIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="bold"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Annual Work Summary:"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:textStyle="normal"
+                    android:padding="3dip"/>
+                <TextView
+                    android:id="@+id/textViewAnnualWork"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="0"

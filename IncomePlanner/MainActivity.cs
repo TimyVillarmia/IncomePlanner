@@ -14,9 +14,9 @@ namespace IncomePlanner
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        TextInputEditText editTxtBasicPay, editTextDays, editTextTaxRate, editTextSavingsRate;
+        TextInputEditText editTextPeso, editTextWorkedHours, editTextTaxRate, editTextSavingsRate;
         MaterialButton btnCalculate, btnClear;
-        TextView textViewBasicPay, textViewSSS, textViewPhilHealth, textViewPagIbig, textViewIncomeTax, textViewTotalDeductions, textViewSavings, textViewNetPay;
+        TextView textViewAnnualIncome, textViewAnnualWork, textViewSSS, textViewPhilHealth, textViewPagIbig, textViewIncomeTax, textViewTotalDeductions, textViewSavings, textViewNetPay;
         string SelectedPeriod;
 
 
@@ -53,20 +53,12 @@ namespace IncomePlanner
             textViewSavings = FindViewById<TextView>(Resource.Id.textViewSavings);
             textViewNetPay = FindViewById<TextView>(Resource.Id.textViewNetPay);
 
-            AutoCompleteTextView dropdown_menu = FindViewById<AutoCompleteTextView>(Resource.Id.dropdown_item);
 
-            dropdown_menu.ItemClick += dropdown_menu_ItemSelected;
             btnCalculate.Click += BtnCalculate_Click;
             btnCalculate.Click += BtnClear_Click;
 
-            var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.period_array, Android.Resource.Layout.SimpleSpinnerDropDownItem);
-
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            dropdown_menu.Adapter = adapter;
 
 
-            dropdown_menu.SetSelection(0);
 
         }
 
@@ -83,33 +75,6 @@ namespace IncomePlanner
             
         }
 
-        private void dropdown_menu_ItemSelected(object sender, AdapterView.ItemClickEventArgs e)
-        {
-            AutoCompleteTextView spinner = (AutoCompleteTextView)sender;
-            string toast = string.Format(spinner.Text + e.Position);
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
-
-
-            TextInputLayout test = FindViewById<TextInputLayout>(Resource.Id.TextLayoutPhp);
-
-
-
-
-            if(e.Position == 0)
-            {
-                test.Visibility = ViewStates.Gone;
-                
-            }
-            else
-            {
-                test.Visibility = ViewStates.Visible;
-
-            }
-
-
-
-
-        }
 
 
 
