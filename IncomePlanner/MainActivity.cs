@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -7,6 +8,7 @@ using AndroidX.AppCompat.App;
 using Google.Android.Material.Button;
 using Google.Android.Material.TextField;
 using System;
+using static Android.Service.Voice.VoiceInteractionSession;
 using static Android.Views.ViewGroup;
 
 namespace IncomePlanner
@@ -16,7 +18,6 @@ namespace IncomePlanner
     {
         TextInputEditText editTextPeso, editTextWorkedHours, editTextTaxRate, editTextSavingsRate;
         MaterialButton btnCalculate, btnClear;
-        TextView textViewAnnualIncome, textViewAnnualWork, textViewSSS, textViewPhilHealth, textViewPagIbig, textViewIncomeTax, textViewTotalDeductions, textViewSavings, textViewNetPay;
         string SelectedPeriod;
 
 
@@ -43,12 +44,6 @@ namespace IncomePlanner
             btnCalculate = FindViewById<MaterialButton>(Resource.Id.btnCalculate);
             btnClear = FindViewById<MaterialButton>(Resource.Id.btnClear);
 
-            // TextView
-            //textViewAnnualIncome = FindViewById<TextView>(Resource.Id.textViewAnnualIncome);
-            //textViewAnnualWork = FindViewById<TextView>(Resource.Id.textViewAnnualWork);
-            //textViewIncomeTax = FindViewById<TextView>(Resource.Id.textViewIncomeTax);
-            //textViewSavings = FindViewById<TextView>(Resource.Id.textViewSavings);
-            //textViewNetPay = FindViewById<TextView>(Resource.Id.textViewNetPay);
 
 
             btnCalculate.Click += BtnCalculate_Click;
@@ -69,7 +64,11 @@ namespace IncomePlanner
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            
+            Intent i = new Intent(this, typeof(Activity1));
+            //Add PutExtra method data to intent.    
+            i.PutExtra("Income", editTextPeso.Text.ToString());
+            //StartActivity    
+            StartActivity(i);
         }
 
 
