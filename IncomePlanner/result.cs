@@ -32,8 +32,16 @@ namespace IncomePlanner
 
             //Get txt_Result TextView control from the Main.xaml Layout.      
             //Retrieve the data using Intent.GetStringExtra method    
-            string name = Intent.GetStringExtra("Income");
-            resultAnnualIncome.Text = $"{name}";
+            string Income = Intent.GetStringExtra("Income");
+            string WorkSummary = Intent.GetStringExtra("WorkSummary");
+            string AnnualTax = Intent.GetStringExtra("AnnualTax");
+            string AnnualSavings = Intent.GetStringExtra("AnnualSavings");
+            string SpendableIncome = Intent.GetStringExtra("SpendableIncome");
+            resultAnnualIncome.Text = $"{Income}";
+            resultWorkSummary.Text = $"{WorkSummary}";
+            resultAnnualTax.Text = $"{AnnualTax}";
+            resultAnnualSavings.Text = $"{AnnualSavings}";
+            resultSpendableIncome.Text = $"{SpendableIncome}";
         }
     }
 }

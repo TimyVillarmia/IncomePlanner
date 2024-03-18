@@ -92,19 +92,12 @@
         android:gravity="right">       
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCalculate"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calculate"
             android:layout_marginRight="4dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnClear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-            app:icon="@drawable/abc_ic_clear_material"
-            />
-
+  
     </LinearLayout>
 
 

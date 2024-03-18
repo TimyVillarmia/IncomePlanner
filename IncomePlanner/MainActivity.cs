@@ -8,8 +8,10 @@ using AndroidX.AppCompat.App;
 using Google.Android.Material.Button;
 using Google.Android.Material.TextField;
 using System;
+using System.Runtime.Remoting.Contexts;
 using static Android.Service.Voice.VoiceInteractionSession;
 using static Android.Views.ViewGroup;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace IncomePlanner
 {
@@ -42,42 +44,51 @@ namespace IncomePlanner
 
             // Buttons
             btnCalculate = FindViewById<MaterialButton>(Resource.Id.btnCalculate);
-            btnClear = FindViewById<MaterialButton>(Resource.Id.btnClear);
 
 
 
             btnCalculate.Click += BtnCalculate_Click;
-            btnCalculate.Click += BtnClear_Click;
 
 
 
 
         }
 
-        private void BtnClear_Click(object sender, EventArgs e)
-        {
-            //editTextHourlyRate.Text = "";
-            //editTextWorkedHours.Text = "";
-            //editTextTaxRate.Text = "";
-            //editTextSavingsRate.Text = "";
-        }
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            double taxRate = double.Parse(editTextTaxRate.Text) / 100;
-            double savingsRate = double.Parse(editTextSavingsRate.Text) / 100;
+            if (editTextHourlyRate.Text != string.Empty)
+            {
+                double taxRate = double.Parse(editTextTaxRate.Text) / 100;
+                double savingsRate = double.Parse(editTextSavingsRate.Text) / 100;
 
-            double annualIncome = 250 * (double.Parse(editTextHourlyRate.Text) * double.Parse(editTextWorkedHours.Text));
-            double annualWorkedHour = 250 * double.Parse(editTextWorkedHours.Text);
-            double annualTaxIncome = annualIncome * taxRate;
-            double annualSavings = annualIncome * savingsRate;
-            double annualNetIncome = annualIncome - annualTaxIncome - annualSavings;
+                double annualIncome = 250 * (double.Parse(editTextHourlyRate.Text) * double.Parse(editTextWorkedHours.Text));
+                double annualWorkedHour = 250 * double.Parse(editTextWorkedHours.Text);
+                double annualTaxIncome = annualIncome * taxRate;
+                double annualSavings = annualIncome * savingsRate;
+                double SpendableIncome = annualIncome - annualTaxIncome - annualSavings;
 
-            Intent i = new Intent(this, typeof(result));
-            //Add PutExtra method data to intent.    
-            i.PutExtra("Income", annualIncome.ToString());
-            //StartActivity    
-            StartActivity(i);
+
+
+
+
+                Intent i = new Intent(this, typeof(result));
+                //Add PutExtra method data to intent.    
+                i.PutExtra("Income", annualIncome.ToString("N0"));
+                i.PutExtra("WorkSummary", annualWorkedHour.ToString("N0"));
+                i.PutExtra("AnnualTax", annualTaxIncome.ToString("N0"));
+                i.PutExtra("AnnualSavings", annualSavings.ToString("N0"));
+                i.PutExtra("SpendableIncome", SpendableIncome.ToString("N0"));
+                //StartActivity    
+                StartActivity(i);
+            }
+            else
+            {
+                string toast = string.Format("Please complete all fields");
+                Toast.MakeText(this, toast, ToastLength.Long).Show();
+
+            }
+  
         }
 
 
