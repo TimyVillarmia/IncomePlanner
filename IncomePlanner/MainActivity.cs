@@ -16,7 +16,7 @@ namespace IncomePlanner
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        TextInputEditText editTextPeso, editTextWorkedHours, editTextTaxRate, editTextSavingsRate;
+        TextInputEditText editTextHourlyRate, editTextWorkedHours, editTextTaxRate, editTextSavingsRate;
         MaterialButton btnCalculate, btnClear;
         string SelectedPeriod;
 
@@ -35,7 +35,7 @@ namespace IncomePlanner
             SetContentView(Resource.Layout.activity_main);
 
             // EditText
-            editTextPeso = FindViewById<TextInputEditText>(Resource.Id.editTextPeso);
+            editTextHourlyRate = FindViewById<TextInputEditText>(Resource.Id.editTextHourlyRate);
             editTextWorkedHours = FindViewById<TextInputEditText>(Resource.Id.editTextWorkedHours);
             editTextTaxRate = FindViewById<TextInputEditText>(Resource.Id.editTextTaxRate);
             editTextSavingsRate = FindViewById<TextInputEditText>(Resource.Id.editTextSavingsRate);
@@ -56,17 +56,26 @@ namespace IncomePlanner
 
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            editTextPeso.Text = "";
-            editTextWorkedHours.Text = "";
-            editTextTaxRate.Text = "";
-            editTextSavingsRate.Text = "";
+            //editTextHourlyRate.Text = "";
+            //editTextWorkedHours.Text = "";
+            //editTextTaxRate.Text = "";
+            //editTextSavingsRate.Text = "";
         }
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            Intent i = new Intent(this, typeof(Activity1));
+            double taxRate = double.Parse(editTextTaxRate.Text) / 100;
+            double savingsRate = double.Parse(editTextSavingsRate.Text) / 100;
+
+            double annualIncome = 250 * (double.Parse(editTextHourlyRate.Text) * double.Parse(editTextWorkedHours.Text));
+            double annualWorkedHour = 250 * double.Parse(editTextWorkedHours.Text);
+            double annualTaxIncome = annualIncome * taxRate;
+            double annualSavings = annualIncome * savingsRate;
+            double annualNetIncome = annualIncome - annualTaxIncome - annualSavings;
+
+            Intent i = new Intent(this, typeof(result));
             //Add PutExtra method data to intent.    
-            i.PutExtra("Income", editTextPeso.Text.ToString());
+            i.PutExtra("Income", annualIncome.ToString());
             //StartActivity    
             StartActivity(i);
         }

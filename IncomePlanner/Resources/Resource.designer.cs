@@ -4672,7 +4672,7 @@ namespace IncomePlanner
 			public const int dropdown_menu = 2131296373;
 			
 			// aapt resource value: 0x7F090076
-			public const int editTextPeso = 2131296374;
+			public const int editTextHourlyRate = 2131296374;
 			
 			// aapt resource value: 0x7F090077
 			public const int editTextSavingsRate = 2131296375;

@@ -12,7 +12,7 @@ using System.Text;
 namespace IncomePlanner
 {
     [Activity(Label = "Activity1")]
-    public class Activity1 : Activity
+    public class result : Activity
     {
         TextView resultAnnualIncome, resultWorkSummary, resultAnnualTax, resultAnnualSavings, resultSpendableIncome;
 
