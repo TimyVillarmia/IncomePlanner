@@ -44,15 +44,11 @@ namespace IncomePlanner
             btnClear = FindViewById<MaterialButton>(Resource.Id.btnClear);
 
             // TextView
-            textViewAnnualIncome = FindViewById<TextView>(Resource.Id.textViewAnnualIncome);
-            textViewAnnualWork = FindViewById<TextView>(Resource.Id.textViewAnnualWork);
-            textViewSSS = FindViewById<TextView>(Resource.Id.textViewSSS);
-            textViewPhilHealth = FindViewById<TextView>(Resource.Id.textViewPhilHealth);
-            textViewPagIbig = FindViewById<TextView>(Resource.Id.textViewPagIbig);
-            textViewIncomeTax = FindViewById<TextView>(Resource.Id.textViewIncomeTax);
-            textViewTotalDeductions = FindViewById<TextView>(Resource.Id.textViewTotalDeductions);
-            textViewSavings = FindViewById<TextView>(Resource.Id.textViewSavings);
-            textViewNetPay = FindViewById<TextView>(Resource.Id.textViewNetPay);
+            //textViewAnnualIncome = FindViewById<TextView>(Resource.Id.textViewAnnualIncome);
+            //textViewAnnualWork = FindViewById<TextView>(Resource.Id.textViewAnnualWork);
+            //textViewIncomeTax = FindViewById<TextView>(Resource.Id.textViewIncomeTax);
+            //textViewSavings = FindViewById<TextView>(Resource.Id.textViewSavings);
+            //textViewNetPay = FindViewById<TextView>(Resource.Id.textViewNetPay);
 
 
             btnCalculate.Click += BtnCalculate_Click;

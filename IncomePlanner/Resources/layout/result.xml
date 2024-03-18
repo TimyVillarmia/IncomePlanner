@@ -1,46 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="16dp">
+    android:paddingHorizontal="16dp"
+    android:gravity="center_vertical">
+
+
 
     <TextView
-        android:id="@+id/test"
+        android:id="@+id/AnnualIncome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Annual Work Summary"
-        android:layout_marginLeft="10dip"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
-
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:layout_alignParentRight="true"
-        android:gravity="center"
-        android:layout_toRightOf="@id/test"
-        android:layout_alignTop="@id/test"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+        android:layout_column="1"
+        android:text="Annual Income:"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="normal"
+        android:padding="3dip"/>
 
     <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Annual Work Summary"
-        android:layout_marginLeft="10dip"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
-
-    
-    <TextView
+        android:id="@+id/resultAnnualIncome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:layout_alignParentRight="true"
-        android:gravity="center"
-        android:layout_toRightOf="@id/test"
-        android:layout_alignTop="@id/test"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+        android:gravity="right"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="bold"
+        android:padding="3dip"
+        android:layout_toRightOf="@id/AnnualIncome"
+        />
+
+    <TextView
+        android:id="@+id/WorkSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="Annual Work Summary:"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="normal"
+        android:padding="3dip"
+        android:layout_below="@id/AnnualIncome"/>
+    <TextView
+        android:id="@+id/resultWorkSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="right"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="bold"
+        android:padding="3dip"
+        android:layout_toRightOf="@id/WorkSummary"
+        android:layout_alignTop="@id/WorkSummary"/>
+
+    <TextView
+        android:id="@+id/AnnualTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="Annual Income Tax:"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="normal"
+        android:padding="3dip"
+        android:layout_below="@id/WorkSummary"/>
+    <TextView
+        android:id="@+id/resultAnnualTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="right"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="bold"
+        android:padding="3dip"
+        android:layout_toRightOf="@id/AnnualTax"
+        android:layout_alignTop="@id/AnnualTax"/>
+    <TextView
+        android:id="@+id/AnnualSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="Annual Savings:"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="normal"
+        android:padding="3dip"
+        android:layout_below="@id/AnnualTax"/>
+    <TextView
+        android:id="@+id/resultAnnualSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="right"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="bold"
+        android:padding="3dip"
+        android:layout_toRightOf="@id/AnnualSavings"
+        android:layout_alignTop="@id/AnnualSavings"/>
+    <TextView
+        android:id="@+id/SpendableIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="Spendable Income:"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="normal"
+        android:padding="3dip"
+        android:layout_below="@id/AnnualSavings"/>
+    <TextView
+        android:id="@+id/resultSpendableIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="right"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:textStyle="bold"
+        android:padding="3dip"
+        android:layout_toRightOf="@id/SpendableIncome"
+        android:layout_alignTop="@id/SpendableIncome"/>
 
 
 
